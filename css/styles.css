@@ -77,7 +77,6 @@ body main {
 }
 
 .profile-name {
-  padding: 8px;
   margin-bottom: 30px;
 
   background: linear-gradient(
@@ -131,7 +130,7 @@ body main {
   background: var(--primary);
 }
 
-footer  {
+footer {
   margin-top: 40px;
   display: flex;
   align-items: center;
