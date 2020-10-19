@@ -14,8 +14,9 @@ html {
   --box-background: #3E3B47;
   --text-color: #F4EDE8;
   --text-color-dark: #737275;
-  --primary: #7159c1;
-  --primary-hover: #9466FF;
+  --primary: #477187;
+  --primary-hover: #113b51;
+  --pic: #46788b;
 }
 
 body {
