@@ -1,0 +1,144 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes gradient-shift {
+  0% {
+    background-position: 58% 50%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  75% {
+    background-position: 10% 50%;
+  }
+  100% {
+    background-position: 58% 50%;
+  }
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 1s ease-in-out;
+  -moz-animation: fadeIn 1s ease-in-out;
+  -o-animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.profile-name {
+  -webkit-animation: gradient-shift 30s ease infinite;
+  animation: gradient-shift 30s ease infinite;
+}
+
+body main {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 40px 30px 0;
+}
+
+.profile {
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  margin-bottom: 40px;
+  border: 3px solid var(--primary);
+  background: var(--background);
+}
+
+.profile-name {
+  padding: 8px;
+  margin-bottom: 30px;
+
+  background: linear-gradient(
+    264.51deg,
+    #ffe580 4.38%,
+    #ff7571 11.51%,
+    #ff7270 25.06%,
+    #ea5dad 36.04%,
+    #c2a0fd 47.63%,
+    #9867f0 59.03%,
+    #3bf0e4 69.96%,
+    #33ce43 83.74%,
+    #b2f4b6 95.62%
+  );
+  background-position: 58% 50%;
+  background-size: 500%;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+
+  height: 56px;
+  max-width: 350px;
+  width: 100%;
+
+  background: var(--box-background);
+  transition: background 0.5s;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link + .link {
+  margin-top: 30px;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.link:hover {
+  background: var(--primary);
+}
+
+footer  {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote {
+  font-size: 12px;
+  color: var(--text-color-dark);
+}
